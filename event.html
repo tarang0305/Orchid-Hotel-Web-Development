@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+  <title>HOTEL PARADISE</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
+  <link href="Style.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container">
+            <div id="branding" >
+             <h1><span class="highlight">Event</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="customer.html">Customers</a></li>
+					<li><a href="guest.html">Guests</a></li>
+                    <li><a href="room.html">Room</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+					<li><a class= current href="event.html">Event</a></li>
+					<li><a href="payment.html">Payment</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<section id="cust_id">
+        <div class="container">
+            
+			<form name="pyform" method="POST" action="http://localhost/cgi-bin/event.py">
+			<table>
+				<tr>
+					<td>Event Type</td>
+					<td><input type="text" required name="Event_type" size="72"/></td>
+				</tr>
+				<tr>
+					<td>Event Name</td>
+					<td><input type="text" required name="Event_name" size="72"/></td>
+				</tr>
+				<tr>
+					<td>Number of guests</td>
+					<td><input type="text" required name="No_of_part" size="72"/></td>
+				</tr>
+				<tr>
+					<td>Event ID</td>
+					<td><input type="text" required name="Event_id" size="72"/></td>
+				</tr>
+				<tr>
+					<td>Customer ID</td>
+					<td><input type="text" required name="Cust_id" size="72"/></td>
+				</tr>
+				<tr>
+					<td>Room ID</td>
+					<td><input type="text" required name="Room_id" size="72"/></td>
+				</tr>
+			</table>
+			<p><input type="submit" name="submit" value="Submit" style="height:50px;width:150px"/></p>
+			</form>
+			
+</body>
+</html>
